@@ -1,0 +1,52 @@
+-- phpMyAdmin SQL Dump
+-- version 5.1.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jan 06, 2023 at 01:46 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 8.0.3
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `result`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ece501`
+--
+
+CREATE TABLE `ece501` (
+  `STUDENTID` int(9) DEFAULT NULL,
+  `SCORE` int(100) DEFAULT NULL,
+  `DEPARTMENT` varchar(9) DEFAULT NULL,
+  `LEVEL` int(3) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ece501`
+--
+
+INSERT INTO `ece501` (`STUDENTID`, `SCORE`, `DEPARTMENT`, `LEVEL`) VALUES
+(160211012, 65, 'ECE', 500),
+(160221014, 89, 'MECH', 500),
+(160231044, 89, 'CPE', 500),
+(160211059, 89, 'ECE', 500),
+(160221088, 53, 'MECH', 500),
+(160211014, 88, 'ECE', 500);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
